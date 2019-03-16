@@ -10,7 +10,8 @@ export default class Matrix extends Component {
   }
   getColor=(data)=>{
     // console.log(`matrix says hi: ${data}`)
-    this.state.color = data
+    // this.state.color = data
+    this.setState({color:data})
     console.log(`matrix ${this.state.color}`)
   }
   passColor=()=>{
